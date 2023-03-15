@@ -6,4 +6,5 @@ interface IEToken {
     function mint(uint256 subAccountId, uint256 amount) external;
     function donateToReserves(uint256 subAccountId, uint256 amount) external;
     function withdraw(uint256 subAccountId, uint256 amount) external;
+    function balanceOf(address account) external view returns (uint256);
 }
