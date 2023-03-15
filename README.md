@@ -18,3 +18,4 @@ If you only wanna see the logs related to how the eDAI/dDAI balance increases or
 forge t
 ```
 
+The [NumenCyber PoC](https://github.com/numencyber/SmartContractHack_PoC/blob/main/EulerfinanceHack/EulerHackPoc.sol) was helpful in getting this PoC over the line.
