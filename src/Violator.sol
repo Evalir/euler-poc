@@ -29,6 +29,8 @@ contract Violator {
 
         // Repay 10M dDAI, eliminating some of the debt and allowing us to do another 10x borrow.
         dDAI.repay(0, 10_000_000e18);
+
+        console.log("eDAI/dDAI balance after 10M dDAI repayment: ", eDAI.balanceOf(address(this)), dDAI.balanceOf(address(this)));
         // Repeat the 10x borrow again. While the leverage is excessive, the protocol is still healthy.
         // Feel free to remove line 31 to see what happens :).
         eDAI.mint(0, 200_000_000e18);
