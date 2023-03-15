@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.13;
 
-interface Liquidation {
+interface IEuler {
     /// @notice Information about a prospective liquidation opportunity
     struct LiquidationOpportunity {
         uint256 repay;
